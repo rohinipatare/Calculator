@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <main>
+    <section class="container">
+      <div class="calculator">
+        <div class="calculator-body">
+          <div class="calculator__notch"></div> 
+          <div class="calculator__display">
+            <!-- <input type="text" name="" id="screen" placeholder="0"> -->
+            <textarea id="screen" cols="30" rows="1"  placeholder="0" autocomplete="off"></textarea>
+          </div>
+          <div class="calculator__keyboard">
+            <button class="btn btn--text" onclick="clear_screen()">AC</button>
+            <button class="btn btn--text" onclick="delete_one()" >DEL</button>
+            <button class="btn" onclick="display('%')">%</button>
+            <button class="btn" onclick="display('/')">/</button>
+            <button class="btn" onclick="display('7')">7</button>
+            <button class="btn" onclick="display('8')">8</button>
+            <button class="btn" onclick="display('9')">9</button>
+            <button class="btn" onclick="display('*')">*</button>
+            <button class="btn" onclick="display('4')">4</button>
+            <button class="btn" onclick="display('5')">5</button>
+            <button class="btn" onclick="display('6')">6</button>
+            <button class="btn" onclick="display('-')">-</button>
+            <button class="btn" onclick="display('1')">1</button>
+            <button class="btn" onclick="display('2')">2</button>
+            <button class="btn" onclick="display('3')">3</button>
+            <button class="btn" onclick="display('+')">+</button>
+            <button class="btn btn--large" onclick="display('0')">0</button>
+            <button class="btn" onclick="display('.')">.</button>
+            <button class="btn btn--colored" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </main>
+  <script src="/js/index.js"></script>
+</body>
+</html>
